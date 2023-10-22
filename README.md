@@ -50,27 +50,27 @@ Si deseas colaborar en el desarrollo de Cotillón FullFiesta, te explicamos cóm
 
 Antes de realizar cambios, crea una rama en la que trabajar. Utiliza un nombre descriptivo para la rama. Por ejemplo:
 
-    ```bash
+```bash
     git checkout -b mi-nueva-caracteristica
-    ```
+```
 
 3. Agregar Cambios y Confirmar (Commit)
 
 Realiza los cambios necesarios en tu rama local. Añade los cambios al área de preparación con git add y luego confirma los cambios con un mensaje descriptivo utilizando git commit. Por ejemplo:
 
-    ```bash
+```bash
     git add archivo-modificado.js
     git commit -m "Agrega una nueva característica al catálogo de productos"
-    ```
+ ```
 Puedes reemplazar archivo-modificado.js por un punto para agregar todos los cambios de una vez, si tienes muchos.
 
 4. Subir los Cambios al Repositorio Remoto
 
 Una vez que hayas confirmado tus cambios en tu rama, puedes subirlos al repositorio remoto en GitHub. Asegúrate de que estás en tu rama:
 
-    ```bash
+```bash
     git push origin mi-nueva-caracteristica
-    ```
+```
 Reemplaza mi-nueva-caracteristica con el nombre de tu rama.
 
 5. Crear una Solicitud de Extracción
