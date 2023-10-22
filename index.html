@@ -3,72 +3,166 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nombre del Local</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/266a30db49.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/7842087b1e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cotillón FullFiesta</title>
 </head>
 
 <body>
     <header>
-        <div>
+        <div class="logo">
             <a href="index.html">
-                <img src="img/logo.png" alt="Logo de Mi Sitio">
+                <img src="./img/logo.png" alt="Logo FullFiesta">
             </a>
+
         </div>
-        <div>
-            <nav>
-                <a href="index.html">Inicio</a>
-                <a href="products.html">Productos</a>
-                <a href="about.html">Quienes Somos</a>
-                <a href="contact.html">Contacto</a>
-            </nav>
-        </div>
+        <!-- MENU RESPONSIVE -->
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801;
+        </label>
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="quienesSomos.html">Quienes Somos</a>
+            <a href="contacto.html">Contacto</a>
+            <label for="check" class="esconder-menu">
+                &#215;
+            </label>
+        </nav>
     </header>
-    <menu>
+    <main>
+        <div class="banner-ppal">
+            <span class="banner-envio">Envíos a todo el país</span>
+        </div>
         <section>
-            <h1>Encontrá todo lo necesitas <br>para tu Fiesta!</h1>
-        </section>
-        <section>
-            <div>
-                <a href="categoria1.html">
-                    <img src="categoria1.jpg" alt="Categoría 1">
-                    <h2>Categoría 1</h2>
-                </a>
+            <div id="slideshow-principal">
+                <div id="slideshow">
+                    <img src="" alt="" id="img1">
+                    <img src="" alt="" id="img2">
+                </div>
+                <div id="indicadores">
+
+                </div>
             </div>
-            <div>
-                <a href="categoria2.html">
-                    <img src="categoria2.jpg" alt="Categoría 2">
-                    <h2>Categoría 2</h2>
-                </a>
+
+            <script src="js/slider.js"></script>
+        </section>
+
+
+
+        <section>
+            <div class="containerproducts">
+                <div class="card">
+                    <figure>
+                        <img src="./img/ACCESORIOS.png">
+                    </figure>
+                    <div class="contenido">
+                        <h3>Accesorios</h3>
+                        <a href="./pages/accesorios.html">Ver Más</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure>
+                        <img src="./img/ATORTA.jpg">
+                    </figure>
+                    <div class="contenido">
+                        <h3>Adornos para Tortas</h3>
+                        <a href="./pages/atorta.html">Ver Más</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure>
+                        <img src="./img/DISFRAZ.png">
+                    </figure>
+                    <div class="contenido">
+                        <h3>Disfraces</h3>
+                        <a href="./pages/disfraz.html">Ver Más</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="iconos">
+            <div class="contenido-iconos">
+                <div>
+                    <i class="fa-solid fa-truck-fast fa-3x"></i>
+                    <h6>Envíos a todo el país</h6>
+                </div>
+                <div>
+                    <i class="fa-regular fa-credit-card fa-3x"></i>
+                    <h6>Todos los medios de pagos</h6>
+                </div>
+                <div id="icono-horario">
+                    <i class="fa-solid fa-clock fa-3x"></i>
+                    <h6>Amplio Horario de Atención</h6>
+                </div>
+
             </div>
 
         </section>
-    </menu>
+    </main>
+
+
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <!-- <h3>FullFiesta <span>Cotillón</span></h3> -->
+            <img src="./img/logo.png" alt="">
+
+            <p class="footer-links">
+                <a href="./index.html">Incio</a>
+                |
+                <a href="./productos.html">Productos</a>
+                |
+                <a href="./quienesSomos.html">Quienes Somos</a>
+                |
+                <a href="./contacto.html">Contacto</a>
+            </p>
+
+        </div>
+
+        <div class="footer-center">
+            <p class="footer-titulo-bloque">
+                <span>Contacto</span>
+            </p>
+            <div>
+                <i class="fa-solid fa-location-dot" style="color: #33383b;"></i>
+                <p><span> Lavalle 2553, Caba, Argentina</span></p>
+            </div>
+            <div>
+                <i class="fa-solid fa-phone" style="color: #33383b;"></i>
+                <p>+54 9 11 1234-4567</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope" style="color: #33383b;"></i>
+                <p>cotillonfullfiesta@gmail.com.ar</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-clock" style="color: #33383b;"></i>
+                <p>Lunes a Viernes de 10 a 19hs</p>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <p class="footer-titulo-bloque">
+                <span>Redes</span>
+            </p>
+
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-whatsapp"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+
+            </div>
+        </div>
+        <div class="footer-company-name">
+            <p>Copyright &copy; 2024 - Todos los derechos reservados</p>
+        </div>
+    </footer>
 </body>
-<footer>
-    <div>
-        <h3>Contacto</h3>
-        <p>Dirección: Calle Principal, Ciudad</p>
-        <p>Teléfono: (123) 456-7890</p>
-    </div>
-    <div>
-        <h3>Categorías</h3>
-        <ul>
-            <li><a href="categoria1.html">Categoría 1</a></li>
-            <li><a href="categoria2.html">Categoría 2</a></li>
-        </ul>
-    </div>
-    <div>
-        <h3>Redes Sociales</h3>
-        <a href="#" target="_blank"><i class="fa-brands fa-tiktok" style="color: #a9aaad;"></i></a>
-        <a href="#" target="_blank"><i class="fa-brands fa-facebook" style="color: #125dde;"></i></a>
-        <a href="#" target="_blank"><i class="fa-brands fa-instagram" style="color: #ed02af;"></i></a>
-    </div>
-    <div>
-        <p>&copy; 2023. Todos los derechos reservados.</p>
-    </div>
-</footer>
 
 </html>
