@@ -54,7 +54,7 @@
                         <div class="container mt-5">
                             <h1 class="text-center">¡Contáctanos!</h1>
                             <!-- para que esta el action (QUITAR) -->
-                            <form action="">
+                            <form action="https://formspree.io/f/myyqopdd" method="post">
                                 <div class="mb-3">
                                     <label for="nombre" class="form-label">Nombre:</label>
                                     <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre"
@@ -75,11 +75,12 @@
                                     <textarea class="form-control" id="mensaje" rows="5"
                                         placeholder="Escribe tu mensaje" required></textarea>
                                 </div>
-                                <input type="submit" class="btn btn-primary" onclick="return enviarFormulario() "
+                                <input type="submit" class="btn btn-primary" onclick="return enviarFormulario();"
                                     value="Enviar">
                                 <!-- <button type="submit" class="btn btn-primary">Enviar</button> -->
                             </form>
                             <div id="error"></div>
+                            <div id="enviado"></div>
                         </div>
                     </div>
                     <div class="contacto info">
@@ -92,7 +93,7 @@
                             </div>
                             <div>
                                 <span><i class="fa-solid fa-envelope"></i></span>
-                                <p>cotillonfullfiesta@fullfiesta.com</p>
+                                <p>cotillonfullfiesta@gmail.com.ar</p>
                             </div>
                             <div>
                                 <span><i class="fa-solid fa-phone"></i></span>

@@ -1,10 +1,10 @@
 addEventListener('DOMContentLoaded', () => {
-    const imagenes = ['img/BANNER1.jpg', 'img/BANNER2.jpg']
+    const imagenes = ['img/BANNER1.png', 'img/BANNER2.png']
 
     let i = 1
     const img1 = document.querySelector('#img1')
     const img2 = document.querySelector('#img2')
-    const divindicadores = document.querySelector('#indicadores') 
+    const divindicadores = document.querySelector('#indicadores')
 
     for (let index = 0; index < imagenes.length; index++) {
         const div = document.createElement('div')
@@ -26,7 +26,7 @@ addEventListener('DOMContentLoaded', () => {
         img2.classList.add('active')
         i++
 
-        if (i == imagenes.length){
+        if (i == imagenes.length) {
             i = 0
 
         }
