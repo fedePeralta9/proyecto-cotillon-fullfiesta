@@ -11,7 +11,10 @@ body {
     color: #000;
 }
 
-/* doy estilo al header */
+/* ####################################
+     ESTILOS PARA EL HEADER
+#################################### */
+
 header {
     height: 100px;
     background: #fea6a2;
@@ -27,12 +30,9 @@ main {
 }
 
 .logo img {
-    width: 150px;
+    width: 80px;
     height: auto;
     margin-right: 20px;
-    /* text-transform: uppercase;
-    color: #fff;
-    font-weight: 200; */
 }
 
 .menu a {
@@ -65,9 +65,11 @@ main {
     display: none;
 }
 
-/* ESTILO AL BANNER PPAL */
+/* ####################################
+     ESTILOS PARA EL BANNER DE ENVIO
+#################################### */
+
 .banner-ppal {
-    /* background: #476054; */
     font-family: 'Pacifico', cursive;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     background: #e04891;
@@ -98,7 +100,10 @@ main {
     animation: moveHorizontal 4s linear infinite;
 }
 
-/* doy estilo al carrusel */
+/* ####################################
+     ESTILOS PARA EL CARRUSEL 
+#################################### */
+
 #slideshow-principal {
     position: relative;
     overflow: hidden;
@@ -151,7 +156,9 @@ main {
     transition: background-color .8s;
 }
 
-/* doy estilo a productos PAGE INICIO*/
+/* #############################################
+     ESTILOS PARA SECCION CATEGORIAS DE INICIO
+############################################## */
 
 .containerproducts {
     width: 100%;
@@ -189,10 +196,6 @@ main {
     text-align: center;
 }
 
-/* .card .contenido p{
-    line-height: 1.5;
-    color: #6a6a6a;
-} */
 .card .contenido h3 {
     font-weight: 400;
     margin-bottom: 15px;
@@ -213,7 +216,10 @@ main {
     color: #fff;
 }
 
-/* doy estilo a los iconos */
+/* #############################################
+     ESTILOS PARA SECCION ICONOS DE INICIO
+############################################## */
+
 #iconos {
     padding: 0 50px;
     background: #8dccad;
@@ -244,7 +250,10 @@ main {
 
 }
 
-/* doy estilo al formulario */
+/* #############################################
+     ESTILOS PARA PAGE CONTACTO
+############################################## */
+
 .contenedor-contacto {
     background: #FFF;
 }
@@ -254,21 +263,6 @@ main {
     position: relative;
     padding: 10px 100px;
 }
-
-/* .contactame .titulo-contacto {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    font-size: 2em;
-} */
-
-/* .contactame .titulo-contacto h2 {
-    color: #33383b;
-    font-weight: 100;
-    font-size: 20px;
-    font-weight: bold;
-   
-} */
 
 .form {
     grid-area: form;
@@ -376,7 +370,9 @@ main {
 }
 
 
-/* doy estilo a PAGINAS de IMAGENES */
+/* #############################################
+     ESTILOS PARA PAGES DE CADA CATEGORIA DE PRODUCTOS
+############################################## */
 .galeria {
     font-family: 'open sans';
 }
@@ -400,7 +396,6 @@ main {
     justify-content: space-around;
     flex-wrap: wrap;
     border-radius: 3px;
-
 }
 
 .contenedor-imagenes .imagen {
@@ -461,9 +456,10 @@ main {
 
 }
 
+/* #############################################
+     ESTILOS PARA PAGE PRODCUTOS
+############################################## */
 
-
-/* ESTILO A LA PAGE PRODUCTOS */
 .galeria_productos li {
     list-style: none;
 }
@@ -499,7 +495,6 @@ main {
 
 .contenedor_productos ul li.active {
     border-color: #c70039;
-    ;
     color: #e84545;
 }
 
@@ -516,7 +511,6 @@ main {
     height: 300px;
     margin: 5px;
     display: block;
-
 }
 
 .page_product .itembox img {
@@ -554,7 +548,6 @@ main {
 
 @keyframes show {
     0% {
-
         transform: scale(0);
         width: 0;
         height: 0;
@@ -563,12 +556,13 @@ main {
 
     100% {
         transform: scale(1);
-
     }
 }
 
+/* #############################################
+     ESTILOS PARA PAGE QUIENES SOMOS
+############################################## */
 
-/* ESTILO PAGE QUIENES SOMOS */
 .qsomos {
     display: flex;
     justify-content: center;
@@ -578,7 +572,6 @@ main {
 }
 
 .contenedor_qsomos {
-    /* padding-top: 50px; */
     width: 100%;
     margin: auto;
     display: flex;
@@ -587,26 +580,30 @@ main {
 }
 
 .box_qsomos {
-    width: 320px;
-    height: 500px;
+    width: 500px;
+    height: 470px;
+    margin: 30px;
+    overflow: hidden;
     background: #fff;
     border-radius: 20px;
     text-align: center;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
 }
 
 .box_qsomos img {
     width: 150px;
+    padding: 5px;
 }
 
 .box_qsomos h4 {
     font-size: 25px;
-    padding-top: 20px;
+    padding: 15px;
     color: #2e937a;
 }
 
 .box_qsomos p {
     color: #4e746b;
-    padding-top: 20px;
+    padding: 15px;
     line-height: 25px;
     font-size: 18px;
 }
@@ -617,7 +614,6 @@ main {
     margin: 15px;
     padding: 30px;
     background-color: #8dccad;
-
 }
 
 .box-text p {
@@ -650,10 +646,11 @@ main {
     }
 }
 
+/* #############################################
+     ESTILOS PARA FOOTER
+############################################## */
 
-/* ESTILO AL FOOTER */
 footer {
-    /* position: fixed; */
     position: relative;
     bottom: 0;
 }
@@ -675,19 +672,19 @@ footer {
     vertical-align: top;
 }
 
-/* Footer left */
+/* estilos del footer seccion izquierda */
 .footer-left {
     width: 30%;
     text-align: center;
 }
 
 .footer-left img {
-    width: 50%;
-    height: 50%;
+    width: 25%;
+    height: 25%;
     margin: 0 auto;
 }
 
-/* Footer links */
+/* estilos del footer seccion links del logo*/
 .footer-links {
     color: #fff;
     font-size: 75%;
@@ -705,14 +702,13 @@ footer {
     color: #ff335f;
 }
 
-/* Footer Center */
+/* estilos del footer seccion centro */
 .footer-center {
     width: 35%;
 }
 
 .footer-center i {
     background-color: transparent;
-    /* color: #ffffff; */
     font-size: 25px;
     width: 38px;
     height: 38px;
@@ -742,7 +738,7 @@ footer {
     line-height: 2;
 }
 
-/* Footer Right */
+/* estilos del footer seccion derecha*/
 .footer-right {
     width: 30%;
 }
@@ -787,7 +783,7 @@ footer {
     background-color: #ff335f;
 }
 
-/* footer pie de pagina */
+/* estilos del footer seccion pie de pagina */
 .footer-company-name {
     color: gray;
     font-size: 12px;
@@ -795,6 +791,9 @@ footer {
     padding: 5px 10px;
 }
 
+/* ####################################
+           DISEÑO RESPONSIVE 
+#################################### */
 
 /* responsive para Tabletas y Teléfonos móviles (max-width 720px)*/
 @media screen and (max-width: 720px) {
@@ -819,9 +818,6 @@ footer {
     .contenido h3 {
         font-size: 85%;
     }
-
-
-
 
     /* estilos beneficios inicio */
     #iconos {
@@ -848,7 +844,6 @@ footer {
         height: 75%;
     }
 
-
     /* estilos quienes somos */
     .contenedor_qsomos {
         display: block;
@@ -867,11 +862,9 @@ footer {
 
     .box_qsomos h4 {
         font-size: 15px;
-        padding-top: 5px;
     }
 
     .box_qsomos p {
-        padding-top: 5px;
         font-size: 13px;
     }
 
@@ -945,11 +938,6 @@ footer {
         right: 0;
     }
 
-    /* estilos footer */
-    /* footer {
-        position: static;
-    } */
-
     .footer-distributed .footer-left,
     .footer-distributed .footer-center,
     .footer-distributed .footer-right {
@@ -997,7 +985,7 @@ footer {
     }
 
     .contenido h3 {
-        font-size: 85%;
+        font-size: 20px;
     }
 
     .card {
@@ -1011,11 +999,19 @@ footer {
     }
 
     /* estilos productos */
-    .page_product .itembox {
-        width: 320px;
-        height: 250px;
+    .contenedor_productos ul li {
+        padding: 5px 5px;
+        font-size: 11px;
     }
 
+    .page_product .itembox {
+        width: 150px;
+        height: 150px;
+    }
 
+    /* estilos quienes somos */
+    .box_qsomos {
+        height: 100%;
 
+    }
 }

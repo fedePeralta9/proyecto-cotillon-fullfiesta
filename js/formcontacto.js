@@ -9,6 +9,10 @@ enviado.style.color = 'green';
 
 // Expresión regular para validar el formato de correo electrónico
 const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+// Expresión regular para validar que el nombre solo contiene letras
+const nombreRegex = /^[A-Za-zÁáÉéÍíÓóÚúÜüÑñ\s]+$/;
+// Expresión regular para validar que el teléfono solo contiene números
+const telefonoRegex = /^\d+$/;
 
 function enviarFormulario() {
     console.log('Enviando formulario...');
@@ -16,15 +20,22 @@ function enviarFormulario() {
     var mensajesError = [];
 
     if (nombre.value === null || nombre.value === '') {
-        mensajesError.push('Ingresa tu nombre');
+        mensajesError.push("El campo Nombre es obligatorio");
+    }
+    else if (!nombre.value.match(nombreRegex)) {
+        mensajesError.push('Ingresa un nombre válido (solo letras y espacios)');
     }
 
-    if (!email.value.match(emailRegex)) {
+    if (email.value === null || email.value === '') {
+        mensajesError.push("El campo Email es obligatorio");
+    }
+
+    else if (!email.value.match(emailRegex)) {
         mensajesError.push('Ingresa un correo electrónico válido');
     }
 
-    if (telefono.value === null || telefono.value === '') {
-        mensajesError.push('Ingresa tu teléfono');
+    if (!(telefono.value === null || telefono.value === '') && !telefono.value.match(telefonoRegex)) {
+        mensajesError.push('Ingresa un número de teléfono válido (solo números)');
     }
 
     if (mensaje.value === null || mensaje.value === '') {
