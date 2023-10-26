@@ -1,43 +1,44 @@
-addEventListener('DOMContentLoaded', () => {
-    const imagenes = ['img/BANNER1.png', 'img/BANNER2.png']
+const slider = document.querySelector("#slider");
+const slides = document.querySelectorAll(".slider__section");
+const indicatorContainer = document.querySelector("#indicators");
 
-    let i = 1
-    const img1 = document.querySelector('#img1')
-    const img2 = document.querySelector('#img2')
-    const divindicadores = document.querySelector('#indicadores')
+let currentSlide = 0;
+const numSlides = slides.length;
 
-    for (let index = 0; index < imagenes.length; index++) {
-        const div = document.createElement('div')
-        div.classList.add('circles')
-        div.id = index
-        divindicadores.appendChild(div)
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.style.display = i === index ? "block" : "none";
+    });
+
+    const indicators = indicatorContainer.querySelectorAll(".indicator");
+    indicators.forEach((indicator, i) => {
+        indicator.classList.toggle("active", i === index);
+    });
+}
+
+function createIndicators() {
+    for (let i = 0; i < numSlides; i++) {
+        const indicator = document.createElement("div");
+        indicator.classList.add("indicator");
+        indicator.addEventListener("click", () => showSlide(i));
+        indicatorContainer.appendChild(indicator);
     }
+}
 
-    img1.src = imagenes[0]
-    const circulos = document.querySelectorAll('.circles')
-    circulos[0].classList.add('resaltado')
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % numSlides;
+    showSlide(currentSlide);
+}
 
-    const slideshow = () => {
-        img2.src = imagenes[i]
-        const circulo_actual = Array.from(circulos).find(el => el.id == i)
-        Array.from(circulos).forEach(cir => cir.classList.remove('resaltado'))
-        circulo_actual.classList.add('resaltado')
+function prevSlide() {
+    currentSlide = (currentSlide - 1 + numSlides) % numSlides;
+    showSlide(currentSlide);
+}
 
-        img2.classList.add('active')
-        i++
+// cada 5 segundos se cambia la imagen
+setInterval(nextSlide, 5000);
 
-        if (i == imagenes.length) {
-            i = 0
+// mostrara la imagen en el inicio
+showSlide(currentSlide);
 
-        }
-
-        setTimeout(() => {
-            img1.src = img2.src
-            img2.classList.remove('active')
-        }, 1000)
-
-    }
-
-    setInterval(slideshow, 4000)
-
-})
+createIndicators();
