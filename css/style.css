@@ -202,6 +202,30 @@ main {
 }
 
 /* #############################################
+     ESTILOS PARA API DEL CLIMA
+############################################## */
+
+.clima-contenedor {
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.clima-contenedor p {
+    font-size: 1em;
+    margin: 0;
+    padding: 10px;
+    background-color: #fea6a2;
+    color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* #############################################
      ESTILOS PARA SECCION ICONOS DE INICIO
 ############################################## */
 
@@ -426,7 +450,7 @@ main {
 }
 
 /* #############################################
-     ESTILOS PARA PAGE PRODCUTOS
+     ESTILOS PARA PAGE PRODUCTOS
 ############################################## */
 
 .galeria_productos li {
@@ -783,6 +807,15 @@ footer {
 
     .contenedor-imagenes .imagen {
         width: 48%;
+    }
+
+    /* estilos para la api clima */
+    .clima-contenedor {
+        font-size: 0.8em;
+    }
+
+    .clima-contenedor p {
+        font-size: 0.8em;
     }
 
     /* estilos beneficios inicio */
